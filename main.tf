@@ -1,6 +1,6 @@
 locals {
   vpc_id      = "${var.vpc_id == "" && var.enabled == "true" ? element(concat(data.aws_vpc.kops.*.id, list("")), 0) : var.vpc_id}"
-  cluster_tag = "kubernetes/cluster/${var.cluster_name}"
+  cluster_tag = "kubernetes.io/cluster/${var.cluster_name}"
 }
 
 # kops 1.11, VPC gets KC and k/c tag if owned, nothing if shared.

@@ -65,3 +65,11 @@ data "aws_security_group" "nodes" {
     Name = "nodes.${var.cluster_name}"
   }
 }
+
+data "aws_iam_role" "masters" {
+  name = "masters.${var.cluster_name}"
+}
+
+data "aws_iam_role" "nodes" {
+  name = "nodes.${var.cluster_name}"
+}

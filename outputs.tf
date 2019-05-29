@@ -45,7 +45,7 @@ output "nodes_security_group_id" {
 
 output "masters_role_name" {
   value       = "${data.aws_iam_role.masters.id}"
-  description = "K8s nodes Security Group ARN"
+  description = "Masters IAM Role name"
 }
 
 output "masters_role_arn" {

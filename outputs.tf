@@ -55,7 +55,7 @@ output "masters_role_arn" {
 
 output "nodes_role_name" {
   value       = "${data.aws_iam_role.nodes.id}"
-  description = "Kops nodes Role name"
+  description = "Kops nodes IAM Role name"
 }
 
 output "nodes_role_arn" {

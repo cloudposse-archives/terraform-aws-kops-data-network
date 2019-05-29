@@ -50,7 +50,7 @@ output "masters_role_name" {
 
 output "masters_role_arn" {
   value       = "${data.aws_iam_role.masters.arn}"
-  description = "K8s nodes Security Group ID"
+  description = "Kops masters IAM Role ARN"
 }
 
 output "nodes_role_name" {

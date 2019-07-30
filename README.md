@@ -3,7 +3,7 @@
 
 [![Cloud Posse][logo]](https://cpco.io/homepage)
 
-# terraform-aws-kops-data-network [![Build Status](https://travis-ci.org/cloudposse/terraform-aws-kops-data-network.svg?branch=master)](https://travis-ci.org/cloudposse/terraform-aws-kops-data-network) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-kops-data-network.svg)](https://github.com/cloudposse/terraform-aws-kops-data-network/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+# terraform-aws-kops-data-network [![Codefresh Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-kops-data-network?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d4099b8a82ec64bb9fdf9a7) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-kops-data-network.svg)](https://github.com/cloudposse/terraform-aws-kops-data-network/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to lookup network resources within a [Kops](https://github.com/kubernetes/kops) cluster
@@ -41,6 +41,11 @@ We literally have [*hundreds of terraform modules*][terraform_modules] that are 
 
 
 ## Usage
+
+
+**IMPORTANT:** The `master` branch is used in `source` just as an example. In your code, do not pin to `master` because there may be breaking changes between releases.
+Instead pin to the release tag (e.g. `?ref=tags/x.y.z`) of one of our [latest releases](https://github.com/cloudposse/terraform-aws-kops-data-network/releases).
+
 
 ```hcl
 module "kops_metadata" {
